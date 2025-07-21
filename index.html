@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Bebidas - Essencia Coffee</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+      color: #222;
+    }
+
+    .menu-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #444;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .item-name {
+      font-weight: 600;
+    }
+
+    .prices {
+      text-align: right;
+      display: flex;
+      gap:22px; /* Ajusta el espacio entre onzas */
+      justify-content: flex-end; /* Mantiene alineado a la derecha */
+    }
+
+    .onzaz {
+      text-align: right;
+      font-size: 13px;
+      display: flex;
+      font-weight: 600;
+      gap:14px; /* Ajusta el espacio entre onzas */
+      justify-content: flex-end; /* Mantiene alineado a la derecha */
+    }
+
+    .type0 { /* Contiene solo la line del Tipo */
+      margin-top: 50px;
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .type1 { /* Contiene la line del Tipo y Oz */
+      margin-top: 50px;
+      margin-bottom: 8px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .type2 { /* Contiene la line del Tipo, Oz y Caliente/Frio */
+      margin-top: 50px;
+      margin-bottom: 0px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .note0 {  /* Contiene solo la line del Caliente/Frio */
+      font-size: 0.9em;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .note1 { /* Contiene la linea de Oz*/
+      font-size: 0.9em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: #555;
+    }
+
+    .note2 { /* Son de los extras */
+      font-size: 0.9em;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Essencia Coffee</h1>
+    <h2>Menú de Bebidas</h2>
+
+    <div class="section">
+        <div class="type0">CAFÉ CLÁSICO</div>
+        <div class="item"><span class="item-name">Expresso Solo</span><div class="prices"><span>$20</span></div></div>
+        <div class="note2"><strong>1 Oz de Expresso.</strong></div>
+        <div class="item"><span class="item-name">Expresso Doble</span><div class="prices"><span>$40</span></div></div>
+        <div class="note2"><strong>2 Oz de Expresso.</strong></div>
+        <div class="item"><span class="item-name">Cortado 4 Oz</span><div class="prices"><span>$50</span></div></div>
+        <div class="note2"><strong>2 Oz de expresso y 2 Oz de leche texturizada.</strong></div>
+        <div class="item"><span class="item-name">Americano 12 Oz</span><div class="prices"><span>$65</span></div></div>
+        <div class="note2"><strong>Expresso, agua, leche (opcional).</strong></div>
+        <div class="item"><span class="item-name">Latte Corto 8 Oz</span><div class="prices"><span>$60</span></div></div>
+        <div class="note2"><strong>Expresso y leche texturizado.</strong></div>
+        <div class="item"><span class="item-name">Cappuccino Natural 8 Oz</span><div class="prices"><span>$60</span></div></div>
+        <div class="note2"><strong>Expresso, leche al vapor, espuma densa y cocoa en polvo.</strong></div>
+      </div>
+
+    <div class="section">
+        <div class="type2">LATTES</div>
+        <div class="note0"><strong>(Caliente 12 Oz / Frio 16 Oz)</strong></div>
+        <div class="item"><span class="item-name">Latte Sencillo (Natural)</span><div class="prices"><span>$70</span></div></div>
+        <div class="item"><span class="item-name">Latte Vainilla</span><div class="prices"><span>$85</span></div></div>
+        <div class="item"><span class="item-name">Latte Caramelo</span><div class="prices"><span>$85</span></div></div>
+        <div class="item"><span class="item-name">Latte Rol de Canela</span><div class="prices"><span>$85</span></div></div>
+        <div class="item"><span class="item-name">Latte de la Olla (Natural)</span><div class="prices"><span>$85</span></div></div>
+        <div class="item"><span class="item-name">Latte de Avellana Tostada</span><div class="prices"><span>$85</span></div></div>
+    </div>
+
+    <div class="section">
+        <div class="type0">DE LA CASA</div>
+        <div class="item"><span class="item-name">Honey Latte</span><div class="prices"><span>$75</span></div></div>
+        <div class="note2"><strong>Latte de miel con canela y nuez moscada.</strong></div>
+        <div class="item"><span class="item-name">Smoky Latte Shake (frio)</span><div class="prices"><span>$90</span></div></div>
+        <div class="note2"><strong>Expresso, jarabe tostado, leche de avena y toque de mantequilla.</strong></div>
+        <div class="item"><span class="item-name">Lavanda Matcha Essence (Frio)</span><div class="prices"><span>$85</span></div></div>
+        <div class="note2"><strong>Matcha ceremonial, endulzado con cold foam de lavanda.</strong></div>
+      </div>
+
+    <div class="section">
+      <div class="type2">CHAI</div>
+      <div class="note1"><strong>(Caliente 8 Oz, 12 Oz / Frio 16 Oz)</strong></div>
+      <div class="onzaz"><span>8 Oz</span><span>12 Oz</span><span>16 Oz</span></div>
+      <div class="item"><span class="item-name">Sweet Chai Latte</span><div class="prices"><span>$70</span><span>$80</span><span>$90</span></div></div>
+      <div class="item"><span class="item-name">Especias Chai Latte</span><div class="prices"><span>$70</span><span>$80</span><span>$90</span></div></div>
+    </div>
+
+    <div class="section">
+      <div class="type2">MOKA</div>
+      <div class="note1"><strong>(Caliente 8 Oz, 12 Oz / Frio 16 Oz)</strong></div>
+      <div class="onzaz"><span>8 Oz</span><span>12 Oz</span><span>16 Oz</span></div>
+      <div class="item"><span class="item-name">Moka Bliss</span><div class="prices"><span>$70</span><span>$75</span><span>$85</span></div></div>
+      <div class="note2"><strong>Expresso, chocolate oscuro y leche.</strong></div>
+      <div class="item"><span class="item-name">Moka Delight</span><div class="prices"><span>$70</span><span>$75</span><span>$85</span></div></div>
+      <div class="note2"><strong>Expresso, chocolate blanco y leche.</strong></div>
+      <div class="item"><span class="item-name">Choconut Moka</span><div class="prices"><span>$70</span><span>$75</span><span>$85</span></div></div>
+      <div class="note2"><strong>Expresso, chocolate, avellana tostada, cold foam y canela.</strong></div>
+      <div class="item"><span class="item-name">Chocolate Caliente</span><div class="prices"><span>$65</span><span>$75</span><span>$85</span></div></div>
+    </div>
+
+    <div class="section">
+      <div class="type1">MATCHA</div>
+      <div class="onzaz"><span>12 Oz</span><span>16 Oz</span></div>
+      <div class="item"><span class="item-name">Matcha</span><div class="prices"><span>$80</span><span>$85</span></div></div>
+    </div>
+
+    <div class="section">
+      <div class="type1">TISANAS</div>
+      <div class="onzaz"><span>12 Oz</span><span>16 Oz</span></div>
+      <div class="item"><span class="item-name">Fresa y Mora</span><div class="prices"><span>$75</span><span>$85</span></div></div>
+      <div class="item"><span class="item-name">Apple Spice</span><div class="prices"><span>$75</span><span>$85</span></div></div>
+      <div class="item"><span class="item-name">Maracuyá</span><div class="prices"><span>$75</span><span>$85</span></div></div>
+    </div>
+
+    <div class="section">
+      <div class="type1">TÓNICOS (Fríos)</div>
+      <div class="onzaz"><span>16 Oz</span></div>
+      <div class="item"><span class="item-name">Natural</span><div class="prices"><span>$85</span></div></div>
+      <div class="item"><span class="item-name">Limón</span><div class="prices"><span>$85</span></div></div>
+      <div class="item"><span class="item-name">Citrico</span><div class="prices"><span>$85</span></div></div>
+    </div>
+
+    <div class="section">
+      <div class="type2">FRAPPÉ</div>
+      <div class="onzaz"><span>16 Oz</span></div>
+      <div class="item"><span class="item-name">Moka</span><span class="prices">$110</span></div>
+    </div>
+
+    <div class="note2">
+      <strong>Extras:</strong><br>
+      Leche de avena: $35 / Shot espresso: $20 / Jarabe extra: $15 / Crema batida: $15
+    </div>
+  </div>
+</body>
+</html>

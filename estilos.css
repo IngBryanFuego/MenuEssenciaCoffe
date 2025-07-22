@@ -1,0 +1,127 @@
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom right, #fdf0d5, #ffeadb, #ffe4e1);
+  padding: 20px;
+  color: #222;
+}
+
+.menu-container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fffdfc;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  color: #a0522d;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #b07644;
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.prices {
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+  font-weight: 600;
+}
+
+.onzaz {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.type0, .type1, .type2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.type0 { margin-bottom: 16px; }
+.type1 { margin-bottom: 8px; }
+.type2 { margin-bottom: 0px; }
+
+.note0, .note1, .note2 {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.note1 { margin-bottom: 0; }
+
+.note2 strong {
+  color: #555;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .menu-container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .item-header {
+    flex-direction: row;
+    font-size: 0.95rem;
+  }
+  }
+}

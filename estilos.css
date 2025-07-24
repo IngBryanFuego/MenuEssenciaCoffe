@@ -2,8 +2,7 @@
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  /*background: linear-gradient(to bottom right, #fdf0d5, #ffeadb, #ffe4e1); */
-  background-color: #5d8aba;
+  background: linear-gradient(to bottom right, #fdf0d5, #ffeadb, #ffe4e1);
   padding: 20px;
   color: #222;
 }
@@ -11,7 +10,7 @@ body {
 .menu-container {
   max-width: 500px;
   margin: auto;
-  background-color: #fdf0d5;
+  background-color: #5d8aba;
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);

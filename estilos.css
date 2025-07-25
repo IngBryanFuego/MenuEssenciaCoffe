@@ -29,7 +29,7 @@ header .logo {
 
 h2 {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: #b07644;
   margin: 0;
 }
@@ -141,12 +141,8 @@ h2 {
     border-radius: 15px;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .item-header {

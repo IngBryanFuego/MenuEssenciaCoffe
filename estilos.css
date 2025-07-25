@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(to bottom right, #5d8aba, #87a9d6, #b0c8f2);
+  /* background: linear-gradient(to bottom right, #285f95, #3b5671, #285f95); */
+  background: #426384;
   padding: 20px;
   color: #222;
 }
@@ -9,7 +10,7 @@ body {
 .menu-container {
   max-width: 500px;
   margin: auto;
-  background-color: #ffe4e1;
+  background-color: #f4f1ec;
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);
@@ -20,16 +21,15 @@ header {
   margin-bottom: 30px;
 }
 
-h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-  color: #a0522d;
+header .logo {
+  max-width: 250px; /* Ajusta el tamaño de tu logo */
+  margin-bottom: 15px; /* Espacio de 5px con el h2 */
 }
+
 
 h2 {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #b07644;
   margin: 0;
 }
@@ -41,55 +41,69 @@ h2 {
 .item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  padding: 1px 0;
 }
 
 .item-name {
-  font-weight: 600;
+  font-family: "Quintessential", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 18px;
+  color: #b07644;
 }
 
 .prices {
+  font-family: "Quintessential", serif;
+  font-weight: 600;
+  font-style: normal;
   display: flex;
   justify-content: flex-end;
   gap: 22px;
-  font-weight: 600;
 }
 
 .onzaz {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
   display: flex;
   justify-content: flex-end;
   gap: 14px;
   font-size: 13px;
-  font-weight: 600;
-  color: #555;
+  color: #555555;
 }
 
 .type0, .type1, .type2 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
   font-size: 22px;
   font-weight: 600;
   margin-top: 50px;
 }
 
-.type0 { margin-bottom: 16px; }
-.type1 { margin-bottom: 8px; }
+.type0 { margin-bottom: 10px; padding: 2px 0; border-bottom: 1px solid #b0afaf;}
+.type1 { margin-bottom: 8px; padding: 2px 0; border-bottom: 1px solid #b0afaf;}
 .type2 { margin-bottom: 0px; }
 
 .note0, .note1, .note2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
   display: flex;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  padding: 1px 0;
   font-size: 15px;
   margin-top: 0px;
   margin-bottom: 10px;
   color: #444;
 }
 
-.note1 { margin-bottom: 0; }
+.note0 { padding: 2px 0; border-bottom: 1px solid #b0afaf; }
 
-.note2 strong {
+.note1 { margin-bottom: 1; padding: 2px 0; border-bottom: 1px solid #b0afaf;}
+
+.note2 .extras strong {
   color: #555;
 }
 
@@ -98,6 +112,23 @@ h2 {
   justify-content: space-between;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.extras {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #555;
+  margin: 20px auto;
+  max-width: 250px; /* Ajusta el ancho de la tabla */
+}
+
+.extra {text-align: center; border-bottom: 1px solid #b0afaf; padding: 5px 0; margin-bottom: 5px;}
+
+.extra-item {
+  display: flex;
+  justify-content: space-between; /* Mueve los precios al extremo derecho */
+  padding: 3px;
 }
 
 @media (max-width: 600px) {
